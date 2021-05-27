@@ -27,12 +27,16 @@ int main(){
     //context_.set_password_callback(boost::bind(&server::get_password, this));
     
     //local path
-    // context_.use_certificate_chain_file("/home/arif/Documents/certificates/abstraca_cert_chain.crt");
-    // context_.use_private_key_file("/home/arif/Documents/certificates/app_abstraca.key", boost::asio::ssl::context::pem);
+    //context_.use_certificate_chain_file("/home/arif/Documents/certificates/abstraca_cert_chain.crt");
+    //context_.use_private_key_file("/home/arif/Documents/certificates/app_abstraca.key", boost::asio::ssl::context::pem);
     
     //server path
-    context_.use_certificate_chain_file("/home/arifsaeed78/abstraca_cert_chain.crt");
-    context_.use_private_key_file("/home/arifsaeed78/app_abstraca.key", boost::asio::ssl::context::pem); 
+    context_.use_certificate_chain_file("/usr/certs/abstract_london_chain.crt");
+    context_.use_private_key_file("/usr/certs/abstract_london_key.key", boost::asio::ssl::context::pem); 
+//    context_.use_certificate_chain_file("/home/arifsaeed78/abstract_london_chain.crt");
+//    context_.use_private_key_file("/home/arifsaeed78/abstract_london_key.key", boost::asio::ssl::context::pem); 
+
+
 
 
     // Create and launch a listening port

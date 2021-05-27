@@ -14,16 +14,16 @@ WebInterface::WebInterface( ){
     //char* rootptr, std::string strAdd,
     
     //********this is for local host*******************
-    this->portNum =8060;
+    //this->portNum =8060;
     //std::string strAdd = "0.0.0.0";
-    std::string strAdd = "127.0.0.1";
+    //std::string strAdd = "127.0.0.1";
     //********this is for local host*******************
 
 
 
     //**********this is for external IP****************
-    //this->portNum =443;
-    //std::string strAdd = "0.0.0.0";   
+    this->portNum =443;
+    std::string strAdd = "0.0.0.0";   
     //**********this is for external IP****************
 
     char root='.';
